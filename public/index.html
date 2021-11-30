@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don't forget to include your keyword!">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Bookmark | Store your Webpages</title>
+</head>
+
+<body class="font-Poppins text-bookmark-black text-base text-center">
+    <!-- =============>Header<============= -->
+    <header id="header">
+        <nav class="container flex justify-between items-center py-4 sm:mt-5 mt-1.5">
+            <div id="logo" class="cursor-pointer">
+                <img src="imgs/logo-bookmark.svg" alt="Brand Logo">
+            </div>
+
+            <div id="navigation">
+                <ul class="sm:flex hidden flex-1 justify-end items-center gap-6 text-sm text-bookmark-black uppercase">
+                    <li><a href="#" class="px-3 font-medium a-hover">Features</a>
+                    </li>
+                    <li><a href="#" class="px-3 font-medium a-hover">Pricing</a>
+                    </li>
+                    <li><a href="#" class="px-3 font-medium a-hover">Contact</a>
+                    </li>
+                    <button type="button"
+                        class="btn bg-bookmark-red uppercase md:hover:bg-bookmark-purple md:hover:text-bookmark-white px-6 py-2.5">Login</button>
+                </ul>
+
+                <!-- Mobile Nav Menu -->
+                <div class="sm:hidden flex justify-end w-8" id="nav-toggler">
+                    <img src="imgs/menu.png" alt="Hamburger Menu">
+                </div>
+
+                <!-- Mobile View Navigation -->
+                <div id="mobile-nav"
+                    class="transform origin-top-right scale-0 opacity-0 duration-500 absolute inset-x-4 top-16 z-50">
+                    <ul
+                        class="transform bg-blue-50 px-3 py-7 rounded-lg shadow-2xl text-bookmark-black uppercase flex sm:hidden flex-col items-center text-sm">
+                        <li class="mb-2"><a href="#" class="px-3 font-medium">Features</a></li>
+                        <hr class="border-b-1 w-full mb-2">
+                        <li class="mb-2"><a href="#" class="px-3 font-medium">Pricing</a></li>
+                        <hr class="border-b-1 w-full mb-2">
+                        <li class="mb-2"><a href="#" class="px-3 font-medium">Contact</a></li>
+                        <hr class="border-b-1 w-full mb-2">
+                        <button type="button" class="btn bg-bookmark-red uppercase px-6 py-2.5 mt-1">Login</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- =============>Hero<============= -->
+    <section id="hero" class="container lg:mt-28 mt-12 lg:mb-52 mb-28">
+        <div class="flex flex-col-reverse lg:flex-row justify-between items-center gap-8 md:gap-12">
+            <div id="hero-text" class="lg:w-1/2 w-full lg:text-left my-4">
+                <h1 class="lg:text-5xl sm:text-4xl text-3xl text-bookmark-black md:mb-8 mb-4">A Simple Bookmark Manager
+                </h1>
+                <p class="text-bookmark-grey text-lg mb-12">A clean and simple interface to organize your favourite
+                    websites.
+                    Open a
+                    new browser tab and see
+                    your sites load instantly for free.</p>
+
+                <div id="hero-cta" class="flex flex-col sm:flex-row justify-center lg:justify-start gap-5">
+                    <button
+                        class="btn btn-primary bg-bookmark-purple md:hover:bg-bookmark-red md:hover:text-bookmark-white">Get
+                        it on
+                        Chrome</button>
+                    <button
+                        class="btn btn-primary bg-bookmark-red md:hover:bg-bookmark-purple md:hover:text-bookmark-white">Get
+                        it on
+                        Firefox</button>
+                </div>
+            </div>
+
+            <div id="hero-image" class="flex flex-1 justify-center lg:my-4 md:mb-14 mb-0 z-10">
+                <img class="w-4/5 md:w-full" src="imgs/hero-bg.png" alt="Hero Image">
+            </div>
+
+            <!-- Rounded rectangle Shape -->
+            <div
+                class="img-bg hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full w-3/5 lg:w-2/5 h-80 absolute lg:top-96 top-72 right-0 z-0">
+            </div>
+        </div>
+    </section>
+
+    <!-- =============>Features<============= -->
+    <section id="features" class="bg-gray-100">
+        <div class="container py-14 md:pt-20">
+            <!-- Section Heading -->
+            <div id="feature-heading" class="mb-20">
+                <h2 class="text-3xl font-medium mb-5">Features</h1>
+                    <p class="text-bookmark-grey text-lg md:w-1/2 mx-auto">Our aim is to make i2 quick and easy for you
+                        to
+                        access your
+                        favourite
+                        websites. Your
+                        bookmarks sync
+                        between your devices so you can access them on the go.</p>
+            </div>
+
+            <!-- feature box 1 -->
+            <div id="feature-1"
+                class="relative mt-24 lg:mb-44 flex flex-col lg:flex-row justify-between items-center sm:gap-8 lg:gap-24">
+
+                <!-- image -->
+                <div id="feature-img" class="flex flex-1 justify-center lg:text-left my-4 z-10">
+                    <img class="w-4/5 md:w-full" src="imgs/illustration-features-tab-1.png" alt="Bookmark in one click">
+                </div>
+
+                <!-- Rounded rectangle Shape -->
+                <div
+                    class="img-bg hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full w-2/4 h-80 absolute -bottom-20 -left-52 z-0">
+                </div>
+
+                <!-- text -->
+                <div id="feature-text" class="lg:w-1/2 md:w-3/5 w-full lg:text-left text-center my-4">
+                    <h2 class="text-2xl font-bold text-bookmark-black mb-3">Bookmark in one click</h2>
+
+                    <p class="text-bookmark-grey mb-5 lg:mb-8">Organize your bookmarks however you like. Our
+                        simple drag-and-drop interface gives you complete
+                        control over how you manage your favourite sites.</p>
+
+                    <button class="btn btn-secondary bg-bookmark-purple">More
+                        Info</button>
+                </div>
+            </div>
+
+            <!-- feature box 2 -->
+            <div id="feature-2"
+                class="relative mt-24 lg:mb-44 flex flex-col-reverse lg:flex-row justify-between items-center sm:gap-8 lg:gap-24">
+
+                <!-- text -->
+                <div id="feature-text" class="lg:w-1/2 md:w-3/5 w-full lg:text-left text-center my-4">
+                    <h2 class="text-2xl font-bold text-bookmark-black mb-3">Intelligent search</h2>
+
+                    <p class="text-bookmark-grey mb-5 lg:mb-8">Our powerful search feature will help you find saved
+                        sites in no time at all. No need to crawl through all of your bookmarks.</p>
+
+                    <button class="btn btn-secondary text-black bg-bookmark-red">More
+                        Info</button>
+                </div>
+
+                <!-- image -->
+                <div id="feature-img" class="flex flex-1 justify-center lg:text-left my-4 z-10">
+                    <img class="w-4/5 md:w-full" src="imgs/illustration-features-tab-2.png" alt="Bookmark in one click">
+                </div>
+
+                <!-- Rounded rectangle Shape -->
+                <div
+                    class="img-bg hidden lg:block overflow-hidden bg-bookmark-red rounded-full w-2/5 h-40 absolute top-36 right-12 z-0 transform rotate-12">
+                </div>
+                <div
+                    class="img-bg hidden lg:block overflow-hidden bg-bookmark-red rounded-full w-2/5 h-40 absolute top-12 right-0 z-0 transform -rotate-45">
+                </div>
+            </div>
+
+            <!-- feature box 3 -->
+            <div id="feature-3"
+                class="relative mt-24 lg:mb-28 flex flex-col lg:flex-row justify-between items-center sm:gap-8 lg:gap-24">
+
+                <!-- image -->
+                <div id="feature-img" class="flex flex-1 justify-center lg:text-left my-4 z-10">
+                    <img class="w-4/5 md:w-full" src="imgs/illustration-features-tab-3.png" alt="Bookmark in one click">
+                </div>
+
+                <!-- Rounded rectangle Shape -->
+                <div
+                    class="img-bg hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full w-2/4 h-80 absolute -bottom-20 -left-52 z-0">
+                </div>
+
+                <!-- text -->
+                <div id="feature-text" class="lg:w-1/2 md:w-3/5 w-full lg:text-left text-center my-4">
+                    <h2 class="text-2xl font-bold text-bookmark-black mb-3">Share your bookmarks</h2>
+
+                    <p class="text-bookmark-grey mb-5 lg:mb-8">Easily share your bookmarks and collections with others.
+                        Create a shareable link that you can send at the click of a button.</p>
+
+                    <button class="btn btn-secondary bg-bookmark-purple">More
+                        Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============>Download Extension<============= -->
+    <section id="download" class="container my-20">
+        <!-- Section Heading -->
+        <div id="download-heading" class="mb-20">
+            <h1 class="text-3xl font-medium mb-5">Download the extension</h1>
+            <p class="text-bookmark-grey text-lg md:w-2/3 mx-auto">We’ve got more browsers in the pipeline. Please do
+                let us know if you’ve got a favourite you’d like us to prioritize.</p>
+        </div>
+
+        <!-- download boxes -->
+        <div id="download-boxes" class="flex flex-col md:flex-row w-4/5 md:w-full mx-auto justify-center gap-16">
+            <!-- box 1 -->
+            <div class="flex flex-col shadow-xl rounded-xl transition-transform duration-200 lg:mb-16">
+                <div class="flex flex-col items-center p-6">
+                    <img class="w-24 mb-6" src="imgs/logo-chrome.svg" alt="Chrome" title="Chrome">
+                    <p class="font-semibold mb-2">Add to Chrome</p>
+                    <p class="opacity-75 mb-4">Minimum version 62</p>
+                </div>
+
+                <hr class="border-b border-bookmark-white">
+
+                <div class="p-6">
+                    <button class="btn btn-primary bg-bookmark-purple">Add & Install Extension</button>
+                </div>
+            </div>
+
+            <!-- box 2 -->
+            <div class="flex flex-col shadow-xl rounded-xl transition-transform duration-200 lg:my-8">
+                <div class="flex flex-col items-center p-6">
+                    <img class="w-24 mb-6" src="imgs/logo-firefox.svg" alt="Firefox" title="Firefox">
+                    <p class="font-semibold mb-2">Add to Firefox</p>
+                    <p class="opacity-75 mb-4">Minimum version 57</p>
+                </div>
+
+                <hr class="border-b border-bookmark-white">
+
+                <div class="p-6">
+                    <button class="btn btn-primary bg-bookmark-purple">Add & Install Extension</button>
+                </div>
+            </div>
+
+            <!-- box 3 -->
+            <div class="flex flex-col shadow-xl rounded-xl transition-transform duration-200 lg:mt-16">
+                <div class="flex flex-col items-center p-6">
+                    <img class="w-24 mb-6" src="imgs/logo-opera.svg" alt="Opera" title="Opera">
+                    <p class="font-semibold mb-2">Add to Opera</p>
+                    <p class="opacity-75 mb-4">Minimum version 36</p>
+                </div>
+
+                <hr class="border-b border-bookmark-white">
+
+                <div class="p-6">
+                    <button class="btn btn-primary bg-bookmark-purple">Add & Install Extension</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============>FAQ<============= -->
+    <section id="faq" class="bg-gray-100 py-20">
+        <div class="container">
+            <!-- Section Heading -->
+            <div id="download-heading" class="mb-20">
+                <h2 class="text-3xl font-medium mb-5">Frequently Asked Questions</h2>
+                <p class="text-bookmark-grey text-lg md:w-2/3 mx-auto">Here are some of our FAQs. If you have any other
+                    questions you’d like answered please feel free to email us.</p>
+            </div>
+
+            <!-- faq questions -->
+            <div id="questions-container" class="flex flex-col justify-center w-full sm:w-3/4 md:w-1/2 mx-auto mb-14">
+                <!-- que 1 -->
+                <div class="question-box">
+                    <div class="question-btn cursor-pointer flex justify-between items-center border-b-2 py-4 px-1">
+                        <p class="font-medium">Can I save my Bookmarks via Email</p>
+                        <img class="w-3.5 h-2.5 transition duration-900" src="imgs/icon-arrow.svg" alt="arrow icon">
+                    </div>
+                    <!-- question answer -->
+                    <div id="answer" class="text-left overflow-hidden h-0 opacity-0 duration-500 py-2 px-1">
+                        <p>Saving your
+                            bookmark is as easy as
+                            sending
+                            an email. When
+                            you send a link
+                            to
+                            add@bookmark.com, it's saved in your account after being checked for validation.</p>
+                    </div>
+                </div>
+
+                <!-- que 2 -->
+                <div class="question-box">
+                    <div class="question-btn cursor-pointer flex justify-between items-center border-b-2 py-4 px-1">
+                        <p class="font-medium">How can I request a new browser?</p>
+                        <img class="w-3.5 h-2.5 transition duration-900" src="imgs/icon-arrow.svg" alt="arrow icon">
+                    </div>
+                    <!-- question answer -->
+                    <div id="answer" class="text-left overflow-hidden h-0 opacity-0 duration-500 py-2 px-1">
+                        <p>sending an
+                            email.
+                            When
+                            you send a link
+                            to
+                            add@bookmark.com,
+                            We will check to see who the email is from. If that email address is registered with Us,
+                            the link included in the email body will be saved.</p>
+                    </div>
+                </div>
+
+                <!-- que 3 -->
+                <div class="question-box">
+                    <div class="question-btn cursor-pointer flex justify-between items-center border-b-2 py-4 px-1">
+                        <p class="font-medium">Is there a mobile app?</p>
+                        <img class="w-3.5 h-2.5 transition duration-900" src="imgs/icon-arrow.svg" alt="arrow icon">
+                    </div>
+                    <!-- question answer -->
+                    <div id="answer" class="text-left overflow-hidden h-0 opacity-0 duration-500 py-2 px-1">
+                        <p>bookmark is
+                            as
+                            easy as sending an
+                            email.
+                            When
+                            you send a link
+                            to
+                            add@bookmark.com,
+                            We will check to see who the email is from. If that email address is registered with Us,
+                            the link included in the email body will be saved.</p>
+                    </div>
+                </div>
+
+                <!-- que 4 -->
+                <div class="question-box">
+                    <div class="question-btn cursor-pointer flex justify-between items-center border-b-2 py-4 px-1">
+                        <p class="font-medium">Other Chromium browsers?</p>
+                        <img class="w-3.5 h-2.5 transition duration-900" src="imgs/icon-arrow.svg" alt="arrow icon">
+                    </div>
+                    <!-- question answer -->
+                    <div id="answer" class="text-left overflow-hidden h-0 opacity-0 duration-500 py-2 px-1">
+                        <p>Saving your
+                            bookmark is as easy as
+                            sending
+                            an email. When
+                            you send a link
+                            to
+                            add@bookmark.com,
+                            the link included in the email body will be saved.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="learn-more">
+                <button class="btn btn-primary bg-bookmark-purple">More Info</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============>Subscription<============= -->
+    <section id="subscribe" class="bg-bookmark-purple py-8">
+        <div class="container text-bookmark-white py-8">
+            <p class="mb-5 text-lg font-light">35,000+ ALREADY JOINED</p>
+            <h2 class="text-3xl mb-9">Stay up-to-date with what we’re doing</h2>
+            <!-- form -->
+            <form action="#" class="flex flex-col sm:flex-row justify-center gap-4">
+                <input class="rounded-full text-center sm:text-left sm:w-96 outline-none text-bookmark-black px-4 py-3"
+                    type="email" placeholder="Enter your email address">
+                <button class="btn btn-primary bg-bookmark-red">Contact Us</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- =============>Footer<============= -->
+    <section id="footer" class="bg-bookmark-black py-8">
+        <div
+            class="container relative flex flex-col md:flex-row justify-between items-center text-bookmark-white gap-12">
+
+            <!-- Footer left section -->
+            <div id="footer-left" class="flex flex-col md:flex-row items-center gap-6 md:gap-12 font-light text-sm">
+                <img class="cursor-pointer" src="imgs/logo-bookmark-white.png" alt="Bookmark Logo">
+
+                <div class="flex gap-5">
+                    <a class="a-hover" href="#">Terms of
+                        Service</a>
+                    <a class="a-hover" href="#">Pricing</a>
+                    <a class="a-hover" href="#">Contact</a>
+                </div>
+            </div>
+
+            <!-- Footer right section -->
+            <div id="footer-right" class="flex flex-col items-center gap-3">
+                <div id="social-icons" class="flex gap-4">
+                    <a rel="nofollow" href="#">
+                        <img class="w-6 hover:opacity-90 duration-400 transform hover:scale-90" src="imgs/facebook.png"
+                            alt="Join on Facebook" loading="lazy">
+                    </a>
+                    <a rel="nofollow" href="#">
+                        <img class="w-6 hover:opacity-90 duration-400 transform hover:scale-90" src="imgs/twitter.png"
+                            alt="Join on Twitter" loading="lazy">
+                    </a>
+                    <a rel="nofollow" href="#">
+                        <img class="w-6 hover:opacity-90 duration-400 transform hover:scale-90" src="imgs/instagram.png"
+                            alt="Join on Instagram" loading="lazy">
+                    </a>
+                </div>
+
+                <a class="font-extralight text-xs" href="mailto:info@webcull.com">info@Bookmark.com</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

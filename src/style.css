@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    @apply shadow-xl text-bookmark-white font-medium rounded-full sm:hover:bg-gray-100 sm:hover:text-bookmark-black transform sm:hover:-translate-y-1 sm:hover:scale-105 transition duration-200;
+}
+
+.btn-primary {
+    @apply py-3 px-6;
+}
+
+.btn-secondary {
+    @apply py-2 px-5;
+}
+
+.a-hover {
+    @apply inline-block hover:text-bookmark-red duration-300 transform hover:scale-110;
+}
+
+#mobile-nav.show-nav {
+    height: 280px;
+}
+
+#download-boxes > div:hover {
+    transform: translateY(-1rem) scale(1.03);
+    @apply shadow-2xl;
+}
+
+#answer.show-answer {
+    opacity: 0.9;
+    height: 110px;
+}
+
+.arrow-rotate > img {
+    transform: rotate(180deg);
+}
