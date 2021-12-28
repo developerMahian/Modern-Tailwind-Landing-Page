@@ -15,9 +15,9 @@
         rel="stylesheet">
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./public/style.css">
 
-    <title>Bookmark | Store your Webpages</title>
+    <title>Bookmarky | Store your Webpages</title>
 </head>
 
 <body class="font-Poppins text-bookmark-black text-base text-center">
@@ -25,16 +25,18 @@
     <header id="header">
         <nav class="container flex justify-between items-center py-4 sm:mt-5 mt-1.5">
             <div id="logo" class="cursor-pointer">
-                <img src="imgs/logo-bookmark.svg" alt="Brand Logo">
+                <img src="./public/imgs/logo-bookmark.svg" alt="Brand Logo">
             </div>
 
             <div id="navigation">
                 <ul class="sm:flex hidden flex-1 justify-end items-center gap-6 text-sm text-bookmark-black uppercase">
-                    <li><a href="#" class="px-3 font-medium a-hover">Features</a>
+                    <li><a href="#features" class="px-2.5 font-medium a-hover">Features</a>
                     </li>
-                    <li><a href="#" class="px-3 font-medium a-hover">Pricing</a>
+                    <li><a href="#download" class="px-2.5 font-medium a-hover">Download</a>
                     </li>
-                    <li><a href="#" class="px-3 font-medium a-hover">Contact</a>
+                    <li><a href="#faq" class="px-2.5 font-medium a-hover">FAQ</a>
+                    </li>
+                    <li><a href="#subscribe" class="px-2.5 font-medium a-hover">Contact</a>
                     </li>
                     <button type="button"
                         class="btn bg-bookmark-red uppercase md:hover:bg-bookmark-purple md:hover:text-bookmark-white px-6 py-2.5">Login</button>
@@ -42,7 +44,7 @@
 
                 <!-- Mobile Nav Menu -->
                 <div class="sm:hidden flex justify-end w-8" id="nav-toggler">
-                    <img src="imgs/menu.png" alt="Hamburger Menu">
+                    <img src="./public/imgs/menu.png" alt="Hamburger Menu">
                 </div>
 
                 <!-- Mobile View Navigation -->
@@ -50,11 +52,13 @@
                     class="transform origin-top-right scale-0 opacity-0 duration-500 absolute inset-x-4 top-16 z-50">
                     <ul
                         class="transform bg-blue-50 px-3 py-7 rounded-lg shadow-2xl text-bookmark-black uppercase flex sm:hidden flex-col items-center text-sm">
-                        <li class="mb-2"><a href="#" class="px-3 font-medium">Features</a></li>
+                        <li class="mb-2"><a href="#features" class="px-3 font-medium">Features</a></li>
                         <hr class="border-b-1 w-full mb-2">
-                        <li class="mb-2"><a href="#" class="px-3 font-medium">Pricing</a></li>
+                        <li class="mb-2"><a href="#download" class="px-3 font-medium">Download</a></li>
                         <hr class="border-b-1 w-full mb-2">
-                        <li class="mb-2"><a href="#" class="px-3 font-medium">Contact</a></li>
+                        <li class="mb-2"><a href="#faq" class="px-3 font-medium">FAQ</a></li>
+                        <hr class="border-b-1 w-full mb-2">
+                        <li class="mb-2"><a href="#subscribe" class="px-3 font-medium">Contact</a></li>
                         <hr class="border-b-1 w-full mb-2">
                         <button type="button" class="btn bg-bookmark-red uppercase px-6 py-2.5 mt-1">Login</button>
                     </ul>
@@ -88,7 +92,7 @@
             </div>
 
             <div id="hero-image" class="flex flex-1 justify-center lg:my-4 md:mb-14 mb-0 z-10">
-                <img class="w-4/5 md:w-full" src="imgs/hero-bg.png" alt="Hero Image">
+                <img class="w-4/5 md:w-full" src="./public/imgs/hero-bg.png" alt="Hero Image">
             </div>
 
             <!-- Rounded rectangle Shape -->
@@ -119,7 +123,8 @@
 
                 <!-- image -->
                 <div id="feature-img" class="flex flex-1 justify-center lg:text-left my-4 z-10">
-                    <img class="w-4/5 md:w-full" src="imgs/illustration-features-tab-1.png" alt="Bookmark in one click">
+                    <img class="w-4/5 md:w-full" src="./public/imgs/illustration-features-tab-1.png"
+                        alt="Bookmark in one click">
                 </div>
 
                 <!-- Rounded rectangle Shape -->
@@ -157,7 +162,8 @@
 
                 <!-- image -->
                 <div id="feature-img" class="flex flex-1 justify-center lg:text-left my-4 z-10">
-                    <img class="w-4/5 md:w-full" src="imgs/illustration-features-tab-2.png" alt="Bookmark in one click">
+                    <img class="w-4/5 md:w-full" src="./public/imgs/illustration-features-tab-2.png"
+                        alt="Bookmark in one click">
                 </div>
 
                 <!-- Rounded rectangle Shape -->
@@ -175,7 +181,8 @@
 
                 <!-- image -->
                 <div id="feature-img" class="flex flex-1 justify-center lg:text-left my-4 z-10">
-                    <img class="w-4/5 md:w-full" src="imgs/illustration-features-tab-3.png" alt="Bookmark in one click">
+                    <img class="w-4/5 md:w-full" src="./public/imgs/illustration-features-tab-3.png"
+                        alt="Bookmark in one click">
                 </div>
 
                 <!-- Rounded rectangle Shape -->
@@ -211,7 +218,7 @@
             <!-- box 1 -->
             <div class="flex flex-col shadow-xl rounded-xl transition-transform duration-200 lg:mb-16">
                 <div class="flex flex-col items-center p-6">
-                    <img class="w-24 mb-6" src="imgs/logo-chrome.svg" alt="Chrome" title="Chrome">
+                    <img class="w-24 mb-6" src="./public/imgs/logo-chrome.svg" alt="Chrome" title="Chrome">
                     <p class="font-semibold mb-2">Add to Chrome</p>
                     <p class="opacity-75 mb-4">Minimum version 62</p>
                 </div>
@@ -226,7 +233,7 @@
             <!-- box 2 -->
             <div class="flex flex-col shadow-xl rounded-xl transition-transform duration-200 lg:my-8">
                 <div class="flex flex-col items-center p-6">
-                    <img class="w-24 mb-6" src="imgs/logo-firefox.svg" alt="Firefox" title="Firefox">
+                    <img class="w-24 mb-6" src="./public/imgs/logo-firefox.svg" alt="Firefox" title="Firefox">
                     <p class="font-semibold mb-2">Add to Firefox</p>
                     <p class="opacity-75 mb-4">Minimum version 57</p>
                 </div>
@@ -241,7 +248,7 @@
             <!-- box 3 -->
             <div class="flex flex-col shadow-xl rounded-xl transition-transform duration-200 lg:mt-16">
                 <div class="flex flex-col items-center p-6">
-                    <img class="w-24 mb-6" src="imgs/logo-opera.svg" alt="Opera" title="Opera">
+                    <img class="w-24 mb-6" src="./public/imgs/logo-opera.svg" alt="Opera" title="Opera">
                     <p class="font-semibold mb-2">Add to Opera</p>
                     <p class="opacity-75 mb-4">Minimum version 36</p>
                 </div>
@@ -271,7 +278,8 @@
                 <div class="question-box">
                     <div class="question-btn cursor-pointer flex justify-between items-center border-b-2 py-4 px-1">
                         <p class="font-medium">Can I save my Bookmarks via Email</p>
-                        <img class="w-3.5 h-2.5 transition duration-900" src="imgs/icon-arrow.svg" alt="arrow icon">
+                        <img class="w-3.5 h-2.5 transition duration-900" src="./public/imgs/icon-arrow.svg"
+                            alt="arrow icon">
                     </div>
                     <!-- question answer -->
                     <div id="answer" class="text-left overflow-hidden h-0 opacity-0 duration-500 py-2 px-1">
@@ -289,7 +297,8 @@
                 <div class="question-box">
                     <div class="question-btn cursor-pointer flex justify-between items-center border-b-2 py-4 px-1">
                         <p class="font-medium">How can I request a new browser?</p>
-                        <img class="w-3.5 h-2.5 transition duration-900" src="imgs/icon-arrow.svg" alt="arrow icon">
+                        <img class="w-3.5 h-2.5 transition duration-900" src="./public/imgs/icon-arrow.svg"
+                            alt="arrow icon">
                     </div>
                     <!-- question answer -->
                     <div id="answer" class="text-left overflow-hidden h-0 opacity-0 duration-500 py-2 px-1">
@@ -308,7 +317,8 @@
                 <div class="question-box">
                     <div class="question-btn cursor-pointer flex justify-between items-center border-b-2 py-4 px-1">
                         <p class="font-medium">Is there a mobile app?</p>
-                        <img class="w-3.5 h-2.5 transition duration-900" src="imgs/icon-arrow.svg" alt="arrow icon">
+                        <img class="w-3.5 h-2.5 transition duration-900" src="./public/imgs/icon-arrow.svg"
+                            alt="arrow icon">
                     </div>
                     <!-- question answer -->
                     <div id="answer" class="text-left overflow-hidden h-0 opacity-0 duration-500 py-2 px-1">
@@ -329,7 +339,8 @@
                 <div class="question-box">
                     <div class="question-btn cursor-pointer flex justify-between items-center border-b-2 py-4 px-1">
                         <p class="font-medium">Other Chromium browsers?</p>
-                        <img class="w-3.5 h-2.5 transition duration-900" src="imgs/icon-arrow.svg" alt="arrow icon">
+                        <img class="w-3.5 h-2.5 transition duration-900" src="./public/imgs/icon-arrow.svg"
+                            alt="arrow icon">
                     </div>
                     <!-- question answer -->
                     <div id="answer" class="text-left overflow-hidden h-0 opacity-0 duration-500 py-2 px-1">
@@ -360,19 +371,19 @@
             <form action="#" class="flex flex-col sm:flex-row justify-center gap-4" netlify>
                 <input class="rounded-full text-center sm:text-left sm:w-96 outline-none text-bookmark-black px-4 py-3"
                     type="email" placeholder="Enter your email address">
-                <button class="btn btn-primary bg-bookmark-red">Contact Us</button>
+                <button type="button" class="btn btn-primary bg-bookmark-red">Contact Us</button>
             </form>
         </div>
     </section>
 
     <!-- =============>Footer<============= -->
-    <section id="footer" class="bg-bookmark-black py-8">
+    <footer id="footer" class="bg-bookmark-black py-8">
         <div
             class="container relative flex flex-col md:flex-row justify-between items-center text-bookmark-white gap-12">
 
             <!-- Footer left section -->
             <div id="footer-left" class="flex flex-col md:flex-row items-center gap-6 md:gap-12 font-light text-sm">
-                <img class="cursor-pointer" src="imgs/logo-bookmark-white.png" alt="Bookmark Logo">
+                <img class="cursor-pointer" src="./public/imgs/logo-bookmark-white.png" alt="Bookmark Logo">
 
                 <div class="flex gap-5">
                     <a class="a-hover" href="#">Terms of
@@ -386,16 +397,16 @@
             <div id="footer-right" class="flex flex-col items-center gap-3">
                 <div id="social-icons" class="flex gap-4">
                     <a rel="nofollow" href="#">
-                        <img class="w-6 hover:opacity-90 duration-400 transform hover:scale-90" src="imgs/facebook.png"
-                            alt="Join on Facebook" loading="lazy">
+                        <img class="w-6 hover:opacity-90 duration-400 transform hover:scale-90"
+                            src="./public/imgs/facebook.png" alt="Join on Facebook" loading="lazy">
                     </a>
                     <a rel="nofollow" href="#">
-                        <img class="w-6 hover:opacity-90 duration-400 transform hover:scale-90" src="imgs/twitter.png"
-                            alt="Join on Twitter" loading="lazy">
+                        <img class="w-6 hover:opacity-90 duration-400 transform hover:scale-90"
+                            src="./public/imgs/twitter.png" alt="Join on Twitter" loading="lazy">
                     </a>
                     <a rel="nofollow" href="#">
-                        <img class="w-6 hover:opacity-90 duration-400 transform hover:scale-90" src="imgs/instagram.png"
-                            alt="Join on Instagram" loading="lazy">
+                        <img class="w-6 hover:opacity-90 duration-400 transform hover:scale-90"
+                            src="./public/imgs/instagram.png" alt="Join on Instagram" loading="lazy">
                     </a>
                 </div>
 
@@ -404,9 +415,9 @@
         </div>
 
 
-    </section>
+    </footer>
 
-    <script src="app.js"></script>
+    <script src="./public/app.js"></script>
 </body>
 
 </html>
